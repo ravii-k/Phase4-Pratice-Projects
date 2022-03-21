@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Budget App</h1>
+      </div>
+      <div class="budget-section">
+        <div class="budget col col-md col-sm">
+          <h2>budget</h2>
+          <img src="image/money-bag.svg" width="40" alt="" />
+          <p class="amount"> <span id="budgetAmount">0</span></p>
+        </div>
+        <div class="expenses col col-md col-sm">
+          <h2>expenses</h2>
+          <img src="image/accounting.svg" width="40" alt="" />
+          <p class="exp-amount"><span id="expensesAmount">0</span></p>
+        </div>
+        <div class="balance col col-md col-sm">
+          <h2>balance</h2>
+          <img src="image/law.svg" width="40" alt="" />
+          <p class="amount bala"> <span id="balanceAmount">0</span></p>
+        </div>
+      </div>
+      <div id="displayExpenses">
+        <div class="budget-list">
+          <div class="col">
+            <h4>expense title</h4>
+          </div>
+          <div class="col">
+            <h4>expense value</h4>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div id="expValue"></div>
+      </div>
+    </div>
+    <div class="toggle">
+      <button id="myBtn" type="button">+</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Budget Form</h2>
+        </div>
+        <div class="modal-body">
+          <div class="budget-form" id="budgetform">
+            <form id="addForm">
+              <label for=""> Make a budget</label> <br />
+              <input type="number" id="number" /> <br />
+              <button type="submit">Add Budget</button>
+            </form>
+          </div>
+
+          <div class="expense-form" id="expense-form">
+            <form action="" id="expForm">
+              <div class="">
+                <label for="">please enter your expense</label> <br />
+                <input type="text" id="expName" />
+              </div>
+              <div class="">
+                <label for="">please enter expense amount</label> <br />
+                <input type="number" id="expNumber" />
+              </div>
+              <button type="submit" id="submitExpen">Add expense</button>
+            </form>
+            <button onclick="callBudget()" id="bug">
+              Back to add budget ->
+            </button>
+          </div>
+
+          <div class="edit-form" id="editForm">
+            <form action="" id="saveEdit">
+              <div class="">
+                <label for="">Edit your expense</label> <br />
+                <input type="text" id="editExpName" />
+              </div>
+              <div class="">
+                <label for="">Edit expense amount</label> <br />
+                <input type="number" id="editExpNumber" />
+              </div>
+              <button type="submit">Save changes</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="project2.js"></script>
+  </body>
+</html>

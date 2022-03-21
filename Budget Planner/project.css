@@ -1,0 +1,247 @@
+@font-face {
+font-family: "General";
+    src: url("./font/Nunito-ExtraLight.ttf");
+    }
+    @font-face {
+ font-family: "heading";
+src: url("./font/Nunito-Bold.ttf");
+    }
+    body {
+    margin: 0;
+     padding: 0;
+     width: 100%;
+     font-family: "General";
+     height: 100vh;
+     background-color: #f5f5f5;
+    }
+    .container {
+     min-height: 80vh;
+    }
+    .header {
+     height: 60px;
+     width: 100%;
+    }
+    h1 {
+     margin: 0;
+     text-align: center;
+     font-family: "heading";
+     padding-top: 10px;
+    }
+    .budget-section {
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+     width: 100%;
+     min-height: 160px;
+     font-weight: 900;
+    }
+    .budget-list {
+    display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+     width: 100%;
+     height: 70px;
+     font-size: 20px;
+    }
+    .exp-amount {
+    color: #b80c09;
+    }
+    .amount {
+     color: #317b22;
+    }
+    .col {
+     width: 40%;
+     text-align: center;
+     text-transform: capitalize;
+    }
+    .col p {
+     font-size: 40px;
+     padding-top: 5px;
+     margin: 0;
+    }
+    .toggle {
+     position: fixed;
+     right: 0;
+     bottom: 18px;
+    }
+    .toggle button {
+    border: none;
+     border-radius: 600px;
+     background: #04458f;
+     padding: 14px 20px;
+     color: #ffffff;
+     font-size: 30px;
+     margin: 10px 50px 0 0;
+     cursor: pointer;
+    }
+    /* modal form */
+    .budget-form {
+     width: 100%;
+     min-height: 200px;
+    }
+    form {
+     margin: 10px 0 20px 10px;
+     min-height: 100px;
+    }
+    input {
+    width: 60%;
+     padding: 8px 0;
+     border-radius: 6px;
+     border: 1px solid gray;
+     margin: 20px 0;
+     padding-left: 5px;
+     color: #495057;
+    }
+    .budget-list .exp p {
+     color: #b80c09;
+     font-size: 18px;
+    }
+    #displayExpenses {
+     width: 100%;
+     display: none;
+    }
+    .expValue {
+     display: flex;
+ justify-content: space-around;
+    height: 40px;
+     font-weight: 900;
+     text-align: center;
+    }
+    #expTitleName {
+     width: 40%;
+    }
+    #expValueAmount {
+     width: 40%;
+    }
+    #edite_delete {
+     width: 40%;
+    }
+    #edite_delete img {
+     cursor: pointer;
+    }
+    #edite_delete button {
+    margin-left: 1px;
+     background: none;
+     border: none;
+    }
+    .budget-form button {
+     background: rgb(1, 83, 1);
+     border: none;
+     border-radius: 6px;
+     color: #ffffff;
+     padding: 10px 40px;
+     cursor: pointer;
+     text-transform: capitalize;
+     font-size: 16px;
+     font-weight: 400;
+    }
+    #bug {
+     font-size: 14px;
+     background: none;
+     color: #04458f;
+     margin: 0px 0px 15px 10px;
+     text-align: justify;
+ padding: 0;
+    }
+    #expense-form {
+     width: 100%;
+     display: none;
+    }
+    #editForm {
+     display: none;
+     width: 100%;
+    }
+    #editForm button {
+     background: #b80c09;
+     border: none;
+     border-radius: 6px;
+     color: #ffffff;
+     padding: 10px 30px;
+     cursor: pointer;
+     text-transform: capitalize;
+     font-size: 16px;
+     font-weight: 400;
+    }
+    .expense-form button {
+    background: #b80c09;
+     border: none;
+     border-radius: 6px;
+     color: #ffffff;
+     padding: 10px 30px;
+     cursor: pointer;
+     text-transform: capitalize;
+     font-size: 16px;
+     font-weight: 400;
+    }
+    /* The Modal (background) */
+    .modal {
+     display: block;
+    position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    text-transform: capitalize;
+    font-weight: 600;
+    }
+    
+    /* Modal Content */
+    .modal-content {
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    background-color: #fefefe;
+    width: 50%;
+min-height: 40px;
+      animation-name: slideIn;
+    animation-duration: 0.4s;
+    }
+    
+    /* The Close Button */
+    .close {
+     color: white;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+    cursor: pointer;
+     color: #000;
+    }
+    .modal-header {
+     padding: 2px 16px;
+    border-bottom: 2px solid gray;
+    }
+    .modal-body {
+    padding: 2px 16px;
+    }
+    
+    /* Add Animation */
+    @keyframes slideIn {
+    from {
+     top: -300px;
+    opacity: 0;
+    }
+     to {
+     top: 0;
+    opacity: 1;
+     }
+    }
+    
+    @keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+     to {
+    opacity: 1;
+     }
+    }
+    
+    
+    
+    
+    
+    
